@@ -22,10 +22,10 @@ The image assumes that you have defined in `package.json` how `npm start` will s
 
 The image assumes that your site is located at `/srv`. So you will need to specify a volume when creating a container. 
 
-sudo docker run -v /some/local/path:/srv -p 8080:8080 -i shapeshed/nodejs
+    sudo docker run -v /some/local/path:/srv -p 8080:8080 -i shapeshed/nodejs
 
 ## Setting the application port
 
 No ports are exposed in the image so you will need to set these when creating the container to align with your application port. In this example the node app listens on 8080.
 
-sudo docker run -v /some/local/path:/srv -p 8080:8080 -i shapeshed/nodejs
+    sudo docker run -v /some/local/path:/srv -p 8080:8080 -i shapeshed/nodejs
